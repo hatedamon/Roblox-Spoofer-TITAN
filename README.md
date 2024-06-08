@@ -2,11 +2,11 @@
 
 TITAN's spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are 👤 Ban evading! :3
 
-## INCOMPLETE PROJECT
+## Incomplete Project
 
 This isn't complete yet ⏳ Snapshot functionality hasn't been fully implemented.
 
-## OPEN SOURCE PROJECT
+## Open Source Project
 
 I'm not gonna paywall such a simple program 🤦 like some people like to do.
 
