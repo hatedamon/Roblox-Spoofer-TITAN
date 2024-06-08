@@ -1,6 +1,6 @@
-# Roblox-Spoofer-TITAN 📡
+# TITAN Spoofer (RBX)
 
-TITAN's spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are 👤. Ban evading! :3
+TITAN's spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are 👤 Ban evading! :3
 
 ## INCOMPLETE PROJECT
 
@@ -8,7 +8,7 @@ This isn't complete yet ⌛ Snapshot functionality hasn't been fully implemented
 
 ## OPEN SOURCE PROJECT
 
-❌ I'm not gonna paywall such a simple program, like some people like to do.
+🤦 I'm not gonna paywall such a simple program, like some people like to do.
 
 ## Features
 
@@ -33,14 +33,14 @@ This isn't complete yet ⌛ Snapshot functionality hasn't been fully implemented
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository 📂
 
     ```sh
     git clone https://github.com/hatedamon/Roblox-Spoofer-TITAN.git
     cd Roblox-Spoofer-TITAN
     ```
 
-2. Ensure you have the necessary dependencies and compiler for Windows (C Compiler). For example:
+2. Ensure you have the necessary dependencies and compiler for Windows (C Compiler) 💽 For example:
 
     - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/)
     - [MinGW-w64](http://mingw-w64.org/doku.php)
