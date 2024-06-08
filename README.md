@@ -1,23 +1,27 @@
 # Roblox-Spoofer-TITAN
 
-TITAN's spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system, specifically those Roblox detect when trying to determine who you are. Ban evading! :3
+TITAN's spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are 👤. Ban evading! :3
 
 ## INCOMPLETE PROJECT
 
-This isn't complete yet; snapshot functionality hasn't been fully implemented.
+This isn't complete yet ⌛ Snapshot functionality hasn't been fully implemented.
+
+## OPEN SOURCE PROJECT
+
+❌ I'm not gonna paywall such a simple program, like some people like to do.
 
 ## Features
 
-- **MAC Address Spoofing**: Spoof the MAC addresses of your network adapters.
-- **Volume Serial Number Spoofing**: Change the volume serial numbers of your drives.
-- **BIOS Information Spoofing**: Modify BIOS information such as system and baseboard serial numbers.
-- **HWID Spoofing**: Change your hardware ID.
-- **State Preservation**: Store and restore the original system state.
+- **MAC Address Spoofing**: 🛜 Spoof the MAC addresses of your net adapters.
+- **Volume Serial Number Spoofing**: 🚘 Change the volume serial nums of your drivers.
+- **BIOS Information Spoofing**: 🔢 Modify BIOS information; baseboard serial nums.
+- **HWID Spoofing**: 🪪 Change your hardware ID.
+- **State Preservation**: 💫 Store and restore the original system state. [INCOMPLETE]
 
 ## Requirements
 
-- Windows OS (x64 & x32)
-- Admin privileges
+- Windows OS (x64 & x32) 🪟
+- Admin privileges 🎟️
 
 ## Files
 
