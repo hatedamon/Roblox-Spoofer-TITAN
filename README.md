@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roblox-Spoofer-TITAN
 
 TITAN's spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system, specifically those Roblox detect when trying to determine who you are. Ban evading! :3
@@ -54,3 +55,8 @@ This isn't complete yet; snapshot functionality hasn't been fully implemented.
 
 - GitHub: [@hatedamon](https://github.com/hatedamon)
 - Partner: graveyear
+=======
+# Roblox Spoofer
+System Spoofer designed to evade Roblox bans, spoofs your HWID, Baseboard, MAC &amp; Disk.
+This is designed as a component of TITAN.
+>>>>>>> cacd99e4b2db8fbc33c8dfc9bded5124a468a199
