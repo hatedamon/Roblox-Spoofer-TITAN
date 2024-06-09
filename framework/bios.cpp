@@ -26,7 +26,7 @@ bool spoofRegistryKey(HKEY root, const std::string &subKey, const std::string &v
 void spoofBIOS()
 {
     // bio serial num
-    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", "1234567890");
+    rege(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", "1234567890");
 
     // baseboard serial num
     spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", "0987654321");
