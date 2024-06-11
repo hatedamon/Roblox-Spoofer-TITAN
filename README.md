@@ -1,6 +1,6 @@
 # TITAN Spoofer/Woofer (Roblox)
 
-**[TITAN's](https://discord.gg/ch6yngrRMz)** spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are, essentially ban evading :3
+**[TITAN's](https://discord.com/invite/yUWyvT9JyP)** spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are, essentially ban evading :3
 
 ## Open Source Project 🔭
 
@@ -8,7 +8,7 @@ I'm not gonna paywall such a simple program 🤦 like some people like to do.
 
 ## What's TITAN ⁉️
 
-**[TITAN's](https://discord.gg/ch6yngrRMz)** a project me and some other developers are working on, an executor plus other exploiting tools to make exploiting more accessible to everybody. That starts with this Spoofer/Woofer. [Discord](https://discord.gg/ch6yngrRMz)'
+**[TITAN's](https://discord.com/invite/yUWyvT9JyP)** a project me and some other developers are working on, an executor plus other exploiting tools to make exploiting more accessible to everybody. That starts with this Spoofer/Woofer. [Discord](https://discord.gg/ch6yngrRMz)'
 
 ## Features 💎
 
