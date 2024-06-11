@@ -1,5 +1,5 @@
-#ifndef HWID_H
-#define HWID_H
+#ifndef HWID_HPP
+#define HWID_HPP
 
 void spoofHWID();
 void storeHWID();

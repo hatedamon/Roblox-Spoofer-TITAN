@@ -1,43 +1,44 @@
 #include <iostream>
 #include <Windows.h>
-#include "bios.h"
+#include <fstream>
+#include <sstream>
 
-bool spoofRegistryKey(HKEY root, const std::string &subKey, const std::string &valueName, const std::string &newValue)
+#include "../bios.hpp"
+#include "../utils.hpp"
+
+std::string generateRandomSerial()
 {
-    HKEY hKey;
-    if (RegOpenKeyExA(root, subKey.c_str(), 0, KEY_SET_VALUE, &hKey) != ERROR_SUCCESS)
+    std::ostringstream serial;
+    for (int i = 0; i < 10; ++i)
     {
-        std::cerr << "failed to open rege key" << std::endl;
-        return false;
+        serial << rand() % 10;
     }
-
-    if (RegSetValueExA(hKey, valueName.c_str(), 0, REG_SZ, reinterpret_cast<const BYTE *>(newValue.c_str()), newValue.size()) != ERROR_SUCCESS)
-    {
-        std::cerr << "failed to set rege value" << std::endl;
-        RegCloseKey(hKey);
-        return false;
-    }
-
-    RegCloseKey(hKey);
-    std::cout << "Registry key spoofed successfully." << std::endl;
-    return true;
+    return serial.str();
 }
 
 void spoofBIOS()
 {
-    // bio serial num
-    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", "1234567890");
-
-    // baseboard serial num
-    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", "0987654321");
+    std::string newSystemSerial = generateRandomSerial();
+    std::string newBaseBoardSerial = generateRandomSerial();
+    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", newSystemSerial);
+    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", newBaseBoardSerial);
 }
 
 void storeBIOSInfo()
 {
-    // logic to store current bios info
+    std::ofstream snapshotFile("../snapshots/bios_snapshot.txt");
+    snapshotFile << getRegistryValue(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber") << std::endl;
+    snapshotFile << getRegistryValue(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber") << std::endl;
+    snapshotFile.close();
 }
 
 void restoreBIOSInfo()
 {
-    // logic to restore bios info from snapshot
+    std::ifstream snapshotFile("../snapshots/bios_snapshot.txt");
+    std::string biosSerialNumber, baseBoardSerialNumber;
+    std::getline(snapshotFile, biosSerialNumber);
+    std::getline(snapshotFile, baseBoardSerialNumber);
+    snapshotFile.close();
+    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", biosSerialNumber);
+    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", baseBoardSerialNumber);
 }

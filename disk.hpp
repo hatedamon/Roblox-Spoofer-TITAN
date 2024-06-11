@@ -1,7 +1,9 @@
-#ifndef DISK_H
-#define DISK_H
+#ifndef DISK_HPP
+#define DISK_HPP
 
 #include <string>
+
+std::string generateRandomVolumeSerial();
 
 bool spoofVolumeSerial(const std::string &drive, const std::string &newSerial);
 void storeVolumeSerial(const std::string &drive);
