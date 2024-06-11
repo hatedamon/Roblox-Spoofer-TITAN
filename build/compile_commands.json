@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/build",
+  "command": "C:\\Users\\Damon\\Downloads\\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-18.1.3-mingw-w64ucrt-11.0.1-r7\\mingw64\\bin\\c++.exe -IC:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/framework -g -std=gnu++11 -o CMakeFiles\\TITANWoofer.dir\\master.cpp.obj -c C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\master.cpp",
+  "file": "C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\master.cpp",
+  "output": "CMakeFiles\\TITANWoofer.dir\\master.cpp.obj"
+},
+{
+  "directory": "C:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/build",
+  "command": "C:\\Users\\Damon\\Downloads\\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-18.1.3-mingw-w64ucrt-11.0.1-r7\\mingw64\\bin\\c++.exe -IC:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/framework -g -std=gnu++11 -o CMakeFiles\\TITANWoofer.dir\\framework\\bios.cpp.obj -c C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\bios.cpp",
+  "file": "C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\bios.cpp",
+  "output": "CMakeFiles\\TITANWoofer.dir\\framework\\bios.cpp.obj"
+},
+{
+  "directory": "C:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/build",
+  "command": "C:\\Users\\Damon\\Downloads\\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-18.1.3-mingw-w64ucrt-11.0.1-r7\\mingw64\\bin\\c++.exe -IC:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/framework -g -std=gnu++11 -o CMakeFiles\\TITANWoofer.dir\\framework\\disk.cpp.obj -c C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\disk.cpp",
+  "file": "C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\disk.cpp",
+  "output": "CMakeFiles\\TITANWoofer.dir\\framework\\disk.cpp.obj"
+},
+{
+  "directory": "C:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/build",
+  "command": "C:\\Users\\Damon\\Downloads\\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-18.1.3-mingw-w64ucrt-11.0.1-r7\\mingw64\\bin\\c++.exe -IC:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/framework -g -std=gnu++11 -o CMakeFiles\\TITANWoofer.dir\\framework\\hwid.cpp.obj -c C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\hwid.cpp",
+  "file": "C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\hwid.cpp",
+  "output": "CMakeFiles\\TITANWoofer.dir\\framework\\hwid.cpp.obj"
+},
+{
+  "directory": "C:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/build",
+  "command": "C:\\Users\\Damon\\Downloads\\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-18.1.3-mingw-w64ucrt-11.0.1-r7\\mingw64\\bin\\c++.exe -IC:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/framework -g -std=gnu++11 -o CMakeFiles\\TITANWoofer.dir\\framework\\mac.cpp.obj -c C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\mac.cpp",
+  "file": "C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\mac.cpp",
+  "output": "CMakeFiles\\TITANWoofer.dir\\framework\\mac.cpp.obj"
+},
+{
+  "directory": "C:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/build",
+  "command": "C:\\Users\\Damon\\Downloads\\winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-18.1.3-mingw-w64ucrt-11.0.1-r7\\mingw64\\bin\\c++.exe -IC:/Users/Damon/OneDrive/Documents/GitHub/RBXSpoofer/framework -g -std=gnu++11 -o CMakeFiles\\TITANWoofer.dir\\framework\\utils.cpp.obj -c C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\utils.cpp",
+  "file": "C:\\Users\\Damon\\OneDrive\\Documents\\GitHub\\RBXSpoofer\\framework\\utils.cpp",
+  "output": "CMakeFiles\\TITANWoofer.dir\\framework\\utils.cpp.obj"
+}
+]
