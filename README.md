@@ -4,7 +4,7 @@
 
 ## Open Source Project 🔭
 
-I'm not gonna paywall such a simple program 🤦 like some people like to do.
+I'm not gonna paywall such a simple program, like some people like to do.
 
 ## What's TITAN ⁉️
 
@@ -20,28 +20,19 @@ I'm not gonna paywall such a simple program 🤦 like some people like to do.
 
 ## Requirements ⚠️
 
-- Windows OS (x64 & x32) 🪟
-- Admin 🎟️
-
-## Files 📃
-
-- `master.cpp`: Entry
-- `mac.hpp` / `mac.cpp`: MAC Spoof
-- `disk.hpp` / `disk.cpp`: VSN Spoof
-- `bios.hpp` / `bios.cpp`: BIO & Board Spoof
-- `hwid.hpp` / `hwid.cpp`: HWID Spoof
-- `utils.hpp` / `utils.cpp`: Merged func
+- Windows OS (x64 & x32)
+- Admin
 
 ## Installation
 
-1. Clone the repository 📂
+1. Clone the repo 📂
 
     ```sh
     git clone https://github.com/hatedamon/Roblox-Spoofer-TITAN.git
     cd Roblox-Spoofer-TITAN
     ```
 
-2. Ensure you have the necessary dependencies and compiler for Windows (C Compiler) 💽 For example:
+2. Either compile with one of the compilers below, or download the .exe from releases and use that.
 
     - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/)
     - [MinGW-w64](http://mingw-w64.org/doku.php)
@@ -49,11 +40,7 @@ I'm not gonna paywall such a simple program 🤦 like some people like to do.
 
 ## Usage 💻
 
-1. Open the dir in your preferred IDE (Visual Studio for most of you) or compile it using your chosen compiler.
-
-2. Run the program w/ admin privileges.
-
-3. The program will automatically store the current system state [INCOMPLETE], spoof the identifiers [COMPLETE], and optionally restore the state if needed [INCOMPLETE].
+1. Run the executable.
 
 ## Credits/Developer 🎓
 
