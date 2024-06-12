@@ -5,7 +5,7 @@
  * might force roblox re-install
  */
 
-#include "../clean.hpp"
+#include "../header/clean.hpp"
 
 #include <iostream>
 #include <filesystem>
@@ -34,8 +34,8 @@ void delRBXIds()
         robloxPath + "AnalysticsSettings.xml",
         robloxPath + "GlobalBasicSettings_13.xml",
         robloxPath + "GlobalBasicSettings_13_Studio.xml",
-        robloxPath + "LocalStorage\\appStorage.json" };
-    for (const std::string& filePath : filesToDelete)
+        robloxPath + "LocalStorage\\appStorage.json"};
+    for (const std::string &filePath : filesToDelete)
     {
         if (pathExists(filePath))
         {
@@ -51,7 +51,7 @@ void delRBXIds()
     }
 
     // del plugins
-    for (const auto& entry : fs::directory_iterator(robloxPath))
+    for (const auto &entry : fs::directory_iterator(robloxPath))
     {
         if (fs::is_directory(entry) && entry.path().filename() == "InstalledPlugins")
         {
@@ -60,7 +60,7 @@ void delRBXIds()
     }
 
     // del sense files
-    for (const auto& entry : fs::recursive_directory_iterator(robloxPath))
+    for (const auto &entry : fs::recursive_directory_iterator(robloxPath))
     {
         if (fs::is_regular_file(entry))
         {
@@ -75,7 +75,7 @@ void delRBXIds()
     }
 }
 
-bool delFile(const std::string& filePath)
+bool delFile(const std::string &filePath)
 {
     try
     { // use FILEOPSTRUCT to del w/o user interaction or recycle bin bs
@@ -87,14 +87,14 @@ bool delFile(const std::string& filePath)
         fileOp.fFlags = FOF_NO_UI | FOF_NOCONFIRMATION | FOF_SILENT | FOF_ALLOWUNDO;
         return SHFileOperationW(&fileOp) == 0;
     }
-    catch (const std::exception& e)
+    catch (const std::exception &e)
     {
         std::cerr << "error deleting: " << e.what() << std::endl;
         return false;
     }
 }
 
-bool delDir(const std::string& dirPath)
+bool delDir(const std::string &dirPath)
 {
     try
     { // same here
@@ -106,7 +106,7 @@ bool delDir(const std::string& dirPath)
         fileOp.fFlags = FOF_NO_UI | FOF_NOCONFIRMATION | FOF_SILENT | FOF_ALLOWUNDO;
         return SHFileOperationW(&fileOp) == 0;
     }
-    catch (const std::exception& e)
+    catch (const std::exception &e)
     {
         std::cerr << "error deleting dir: " << e.what() << std::endl;
         return false;
@@ -133,7 +133,7 @@ std::vector<std::string> getDrives()
 
 // woah, dont look at shit that doesnt exist?
 // magical.
-bool pathExists(const std::string& path)
+bool pathExists(const std::string &path)
 {
     return fs::exists(path);
 }
@@ -141,7 +141,7 @@ bool pathExists(const std::string& path)
 // again, looking for shit
 std::string getLocalAppDataPath()
 {
-    char* localAppData;
+    char *localAppData;
     size_t len;
     _dupenv_s(&localAppData, &len, "LOCALAPPDATA");
     std::string localAppDataPath = localAppData;

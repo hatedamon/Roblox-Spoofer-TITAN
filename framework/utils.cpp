@@ -3,7 +3,7 @@
  * Handles bios.c++
  */
 
-#include "../utils.hpp"
+#include "../header/utils.hpp"
 
 #include <iostream>
 #include <Windows.h>

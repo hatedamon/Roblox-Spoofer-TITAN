@@ -5,11 +5,11 @@
  * author @hatedamon
  */
 
-#include "mac.hpp"
-#include "disk.hpp"
-#include "bios.hpp"
-#include "edid.hpp"
-#include "clean.hpp"
+#include "header/mac.hpp"
+#include "header/disk.hpp"
+#include "header/bios.hpp"
+#include "header/edid.hpp"
+#include "header/clean.hpp"
 
 #include <iostream>
 #include <ctime>

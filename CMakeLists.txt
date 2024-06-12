@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
-    master.cpp
+    Master.cpp
     framework/bios.cpp
     framework/disk.cpp
     framework/edid.cpp

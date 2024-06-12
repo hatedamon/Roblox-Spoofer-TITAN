@@ -3,8 +3,8 @@
  * Spoofs BIOS & Baseboard
  */
 
-#include "../bios.hpp"
-#include "../utils.hpp"
+#include "../header/bios.hpp"
+#include "../header/utils.hpp"
 
 #include <iostream>
 #include <Windows.h>

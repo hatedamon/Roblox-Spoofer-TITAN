@@ -3,8 +3,8 @@
  * Spoofs MAC Adapters
  */
 
-#include "../mac.hpp"
-#include "../utils.hpp"
+#include "../header/mac.hpp"
+#include "../header/utils.hpp"
 
 #include <iostream>
 #include <Windows.h>

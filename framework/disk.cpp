@@ -4,8 +4,8 @@
  * changes volume serial
  */
 
-#include "../disk.hpp"
-#include "../utils.hpp"
+#include "../header/disk.hpp"
+#include "../header/utils.hpp"
 
 #include <iostream>
 #include <Windows.h>

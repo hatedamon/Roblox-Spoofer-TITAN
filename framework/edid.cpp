@@ -3,8 +3,8 @@
  * Spoofs monitors identifier (yes, roblox detects this)
  */
 
-#include "../utils.hpp"
-#include "../edid.hpp"
+#include "../header/utils.hpp"
+#include "../header/edid.hpp"
 
 #include <iostream>
 #include <Windows.h>
