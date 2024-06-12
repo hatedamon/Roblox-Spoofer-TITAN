@@ -1,6 +1,8 @@
 # TITAN Spoofer/Woofer (Roblox)
 
 **[TITAN's](https://discord.com/invite/yUWyvT9JyP)** spoofer is a tool designed to spoof various hardware identifiers (HWIDs) on your system 🖥️ Specifically those Roblox detect when trying to determine who you are, essentially ban evading :3
+Some important things to note when using this is it cleans and deletes your Roblox logs, meaning that your AppSettings will be reset ETC.
+Old snapshots are stored in ./snapshots by date, so keep the dates of when you Spoof in mind.
 
 ## Open Source Project 🔭
 
