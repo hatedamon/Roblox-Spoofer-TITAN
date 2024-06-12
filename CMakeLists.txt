@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
 project(TITANWoofer)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
     master.cpp
     framework/bios.cpp
     framework/disk.cpp
-    framework/hwid.cpp
+    framework/edid.cpp
+    framework/clean.cpp
     framework/mac.cpp
     framework/utils.cpp 
 )

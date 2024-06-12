@@ -1,10 +1,15 @@
+/**
+ * bios.c++
+ * Spoofs BIOS & Baseboard
+ */
+
+#include "../bios.hpp"
+#include "../utils.hpp"
+
 #include <iostream>
 #include <Windows.h>
 #include <fstream>
 #include <sstream>
-
-#include "../bios.hpp"
-#include "../utils.hpp"
 
 std::string generateRandomSerial()
 {
@@ -16,29 +21,29 @@ std::string generateRandomSerial()
     return serial.str();
 }
 
-void spoofBIOS()
+void storeHWIDAndBIOS()
 {
-    std::string newSystemSerial = generateRandomSerial();
-    std::string newBaseBoardSerial = generateRandomSerial();
-    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", newSystemSerial);
-    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", newBaseBoardSerial);
-}
-
-void storeBIOSInfo()
-{
-    std::ofstream snapshotFile("../snapshots/bios_snapshot.txt");
+    std::ofstream snapshotFile("../snapshots/hwid_bios_snapshot.txt");
     snapshotFile << getRegistryValue(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber") << std::endl;
     snapshotFile << getRegistryValue(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber") << std::endl;
     snapshotFile.close();
 }
 
-void restoreBIOSInfo()
+void restoreHWIDAndBIOS()
 {
-    std::ifstream snapshotFile("../snapshots/bios_snapshot.txt");
+    std::ifstream snapshotFile("../snapshots/hwid_bios_snapshot.txt");
     std::string biosSerialNumber, baseBoardSerialNumber;
     std::getline(snapshotFile, biosSerialNumber);
     std::getline(snapshotFile, baseBoardSerialNumber);
     snapshotFile.close();
     spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", biosSerialNumber);
     spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", baseBoardSerialNumber);
+}
+
+void spoofHWIDAndBIOS()
+{
+    std::string newSystemSerial = generateRandomSerial();
+    std::string newBaseBoardSerial = generateRandomSerial();
+    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "SystemSerialNumber", newSystemSerial);
+    spoofRegistryKey(HKEY_LOCAL_MACHINE, "HARDWARE\\DESCRIPTION\\System\\BIOS", "BaseBoardSerialNumber", newBaseBoardSerial);
 }

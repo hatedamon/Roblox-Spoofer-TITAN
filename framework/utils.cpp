@@ -1,6 +1,12 @@
-#include <iostream>
+/**
+ * utils.c++
+ * Handles bios.c++
+ */
 
 #include "../utils.hpp"
+
+#include <iostream>
+#include <Windows.h>
 
 bool spoofRegistryKey(HKEY root, const std::string &subKey, const std::string &valueName, const std::string &newValue)
 {

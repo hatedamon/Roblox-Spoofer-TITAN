@@ -11,4 +11,4 @@ void spoofMACAddress(const std::string &adapterName, const std::string &newMAC);
 void storeSystemSnapshot();
 void restoreSystemSnapshot();
 
-#endif
+#endif // MAC_HPP

@@ -1,9 +1,16 @@
+/**
+ * disk.c++
+ * VS Spoofing
+ * changes volume serial
+ */
+
+#include "../disk.hpp"
+#include "../utils.hpp"
+
 #include <iostream>
 #include <Windows.h>
 #include <fstream>
 #include <sstream>
-
-#include "../disk.hpp"
 
 std::string generateRandomVolumeSerial()
 {

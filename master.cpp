@@ -1,10 +1,18 @@
-#include <iostream>
-#include <ctime>
+/**
+ * APACHE PROTECTED
+ * master.c++
+ * compilation file
+ * author @hatedamon
+ */
 
 #include "mac.hpp"
 #include "disk.hpp"
 #include "bios.hpp"
-#include "hwid.hpp"
+#include "edid.hpp"
+#include "clean.hpp"
+
+#include <iostream>
+#include <ctime>
 
 void createSnapshotDirectory()
 {
@@ -40,17 +48,19 @@ int main()
 
     if (choice == "restore")
     {
+        delRBXIds();
         restoreSystemSnapshot();
-        restoreHWID();
+        restoreHWIDAndBIOS();
         restoreVolumeSerial("C:");
-        restoreBIOSInfo();
+        restoreEDID();
     }
     else if (choice == "spoof")
     {
+        delRBXIds();
         storeSystemSnapshot();
-        storeHWID();
+        storeHWIDAndBIOS();
         storeVolumeSerial("C:");
-        storeBIOSInfo();
+        storeEDID();
 
         auto adapters = getNetworkAdapters();
         for (const auto &adapter : adapters)
@@ -62,9 +72,8 @@ int main()
         std::string drive = "C:";
         std::string newSerial = generateRandomVolumeSerial();
         spoofVolumeSerial(drive, newSerial);
-
-        spoofBIOS();
-        spoofHWID();
+        spoofHWIDAndBIOS();
+        spoofEDID();
     }
     else
     {

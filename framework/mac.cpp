@@ -1,3 +1,11 @@
+/**
+ * mac.c++
+ * Spoofs MAC Adapters
+ */
+
+#include "../mac.hpp"
+#include "../utils.hpp"
+
 #include <iostream>
 #include <Windows.h>
 #include <iphlpapi.h>
@@ -5,8 +13,6 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
-
-#include "../mac.hpp"
 
 #pragma comment(lib, "iphlpapi.lib")
 
@@ -63,7 +69,6 @@ void spoofMACAddress(const std::string &adapterName, const std::string &newMAC)
             ULONG macAddrLen = 6;
             BYTE newMACBytes[6];
             sscanf(newMAC.c_str(), "%hhx:%hhx:%hhx:%hhx:%hhx:%hhx",
-
                    &newMACBytes[0], &newMACBytes[1], &newMACBytes[2],
                    &newMACBytes[3], &newMACBytes[4], &newMACBytes[5]);
 
